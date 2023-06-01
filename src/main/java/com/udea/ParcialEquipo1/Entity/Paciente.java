@@ -7,14 +7,14 @@ import java.io.Serializable;
 
 @Data
 @Entity
-@NoArgsConstructor
+@NoArgsConstructor(force = true)
 @AllArgsConstructor
 @Getter
 @Setter
 @ToString
 public class Paciente implements Serializable {
     @Id
-    @Column(name="cc")
+    @Column(name="cc", length = 20)
     private Long cc;
 
     @Column(name="firstname", nullable = false, length = 80)
@@ -22,6 +22,4 @@ public class Paciente implements Serializable {
 
     @Column(name="FC", nullable = false, length = 80)
     private @NonNull String fechaCreacion;
-
-
 }
