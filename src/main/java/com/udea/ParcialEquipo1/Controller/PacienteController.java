@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/historiaClinica")
+@RequestMapping("/pacientes")
 @CrossOrigin("*")
 public class PacienteController {
 
